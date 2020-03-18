@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button><ion-icon name="menu-outline"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>Recherche évènement</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+      <ion-slides>
+        <ion-slide>
+          <div class="slide">
+            <img src="./assets/concert.jpeg"/>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <div class="slide">
+            <img src="./assets/livre.jpg"/>
+          </div>
+        </ion-slide>
+      </ion-slides>
+      <ion-list>
+          <ion-item>
+            <ion-text>
+            <h1>Rechercher par : </h1>
+         </ion-text>
+          </ion-item>
+         <ion-item>
+            <ion-label position="floating">Lieux :</ion-label>
+            <ion-input></ion-input>
+         </ion-item>
+          <ion-item>
+            <ion-label position="floating">Date :</ion-label>
+            <ion-input></ion-input>
+         </ion-item>
+          <ion-item>
+            <ion-label position="floating">Catégorie :</ion-label>
+            <ion-input></ion-input>
+         </ion-item>
+          <ion-item>
+            <ion-label position="floating">Nom/Prénom :</ion-label>
+            <ion-input></ion-input>
+         </ion-item>
+         <ion-item>
+            <ion-button id="recherche_button" (click)="recherche()">Rechercher</ion-button> 
+         </ion-item>
+      </ion-list>
+       
+  </div>
+</ion-content>
