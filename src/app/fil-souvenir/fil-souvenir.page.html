@@ -1,0 +1,57 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button>
+                <ion-icon name="menu-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>Souvenirs</ion-title>
+        <ion-buttons slot="end">
+            <ion-button>
+                <ion-icon name="person-circle-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-list>
+        <ion-card>
+            <ion-card-header>
+                <ion-card-title>Moi</ion-card-title>
+                <ion-card-subtitle> Port blanc Quiberon 28/07/2018</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+                <div>
+                    <img src="./assets/example.JPG" />
+                </div>
+            </ion-card-content>
+        </ion-card>
+        <ion-card>
+            <ion-card-header>
+                <ion-card-title>Moi</ion-card-title>
+                <ion-card-subtitle> Presqu'il de Quiberon 02/09/2016</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+                <div>
+                    <img src="./assets/example2.jpg" />
+                </div>
+            </ion-card-content>
+        </ion-card>
+        <ion-card>
+            <ion-card-header>
+                <ion-card-title>Le livre de Jean Jaures version 5 alinéa 8</ion-card-title>
+                <ion-card-subtitle> un livre</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+                <div>
+                    <img src="./assets/livre.jpg" />
+                </div>
+            </ion-card-content>
+        </ion-card>
+    </ion-list>
+
+    <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+        <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+        </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</ion-content>
