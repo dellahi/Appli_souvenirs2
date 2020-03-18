@@ -13,3 +13,7 @@ export class FilSouvenirPage implements OnInit {
   }
 
 }
+
+export class ListeSouvenirs {
+  
+}
