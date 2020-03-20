@@ -12,8 +12,4 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
-  connexion(){
-    location.href="/home";
-  }
-
 }
