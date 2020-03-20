@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button><ion-icon class="dansHeader" name="menu-outline"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>Souvenirs</ion-title>
+    <ion-buttons slot="end">
+      <ion-button><ion-icon class="dansHeader" name="person-circle-outline"></ion-icon></ion-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card [routerLink]="['/new-souvenir']">
+    <table>
+      <tr>
+        <td>
+          <div><ion-icon class="dansCard" name="pencil-outline"></ion-icon></div>
+        </td>
+        <td>
+          <p class="titreCard">Nouveau</p>
+          <p>Créer un souvenir</p>
+        </td>
+      </tr>
+    </table>
+  </ion-card>
+  <ion-card>
+    <table>
+      <tr>
+        <td>
+          <div ><ion-icon class="dansCard" name="search-outline"></ion-icon></div>
+        </td>
+        <td>
+          <p class="titreCard">Recherche</p>
+          <p>Recherchez des souvenirs partagés</p>
+        </td>
+      </tr>
+    </table>
+  </ion-card>
+  <ion-card>
+    <table>
+      <tr>
+        <td>
+          <div ><ion-icon class="dansCard" name="filter-outline"></ion-icon></div>
+        </td>
+        <td>
+          <p class="titreCard">Voir des souvenirs </p>
+          <p>Retrouvez vos souvenirs et ceux de vos amis</p>
+        </td>
+      </tr>
+    </table>
+  </ion-card>
+  <ion-card>
+    <table>
+      <tr>
+        <td>
+          <div ><ion-icon class="dansCard" name="play-back-outline"></ion-icon></div>
+        </td>
+        <td>
+          <p class="titreCard">Rewind </p>
+          <p>Revivez vos meilleurs souvenirs</p>
+        </td>
+      </tr>
+    </table>
+  </ion-card>
+
+</ion-content>
