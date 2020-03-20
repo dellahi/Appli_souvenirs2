@@ -1,9 +1,12 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button><ion-icon name="menu-outline"></ion-icon></ion-button>
+      <ion-button><ion-icon name="menu-outline" color="dark"></ion-icon></ion-button>
     </ion-buttons>
     <ion-title>Recherche évènement</ion-title>
+      <ion-buttons slot="end">
+      <ion-button><ion-icon name="person" color="dark"></ion-icon></ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -22,26 +25,22 @@
           </div>
         </ion-slide>
       </ion-slides>
+      <h1>Rechercher par</h1>
       <ion-list>
-          <ion-item>
-            <ion-text>
-            <h1>Rechercher par : </h1>
-         </ion-text>
-          </ion-item>
          <ion-item>
-            <ion-label position="floating">Lieux :</ion-label>
+            <ion-label position="floating">Lieu</ion-label>
             <ion-input></ion-input>
          </ion-item>
           <ion-item>
-            <ion-label position="floating">Date :</ion-label>
+            <ion-label position="floating">Date</ion-label>
             <ion-input></ion-input>
          </ion-item>
           <ion-item>
-            <ion-label position="floating">Catégorie :</ion-label>
+            <ion-label position="floating">Catégorie</ion-label>
             <ion-input></ion-input>
          </ion-item>
           <ion-item>
-            <ion-label position="floating">Nom/Prénom :</ion-label>
+            <ion-label position="floating">Nom/Prénom</ion-label>
             <ion-input></ion-input>
          </ion-item>
          <ion-item>
