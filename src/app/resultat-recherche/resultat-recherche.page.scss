@@ -39,6 +39,9 @@ ion-checkbox{
     width: 40px;
     height: 40px;
     display: block;
+    --background: #FFDDDD;
+    --background-checked: #EDC0C0;
+    --border-color-checked: white;
     vertical-align: middle;
     margin-left: auto;
     margin-right: auto;
@@ -76,4 +79,9 @@ transform: translateX(-50%);
     height: 50px;
     width: 100%;
     background-color: #EEEEEE;
+}
+
+ion-card-title{
+    font-size: 20px;
+    font-weight: bold;
 }
