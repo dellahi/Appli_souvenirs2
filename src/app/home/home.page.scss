@@ -17,9 +17,7 @@
 #container p {
   font-size: 16px;
   line-height: 22px;
-
   color: #8c8c8c;
-
   margin: 0;
 }
 
@@ -31,21 +29,26 @@ ion-content ion-toolbar {
   --background: translucent;
 }
 
-ion-header{
-    background-color: #FFF2F2;
-    //--background: #FFF2F2;
+ion-toolbar{
+    --background: #F7E4E4;
 }
 
 #recherche_button{
     --background: #F7E4E4;
-    --background-hover: #F7E4E4;
+    --background-hover: #EDC0C0;
     --color: black;
-    font-weight: 900;
+    --color-hover: black;
+    --background-activated: #EDC0C0;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
+    height: 40px;
+
 }
 
 #card_img{
     float:right;
+}
+h1{
+    text-align: center;
 }

@@ -31,7 +31,57 @@ ion-content ion-toolbar {
   --background: translucent;
 }
 
-ion-header{
-    background-color: #FFF2F2;
-    //--background: #FFF2F2;
+ion-toolbar{
+    --background: #F7E4E4;
+}
+
+ion-checkbox{
+    width: 40px;
+    height: 40px;
+    display: block;
+    --background: #FFDDDD;
+    --background-checked: #EDC0C0;
+    --border-color-checked: white;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ion-card{
+    --background: #FFF2F2;
+}
+
+h3{
+    color: black;
+}
+ion-card{
+    padding:0;
+}
+
+#recherche{
+    z-index: 100;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+transform: translateX(-50%);
+    text-align: center;
+     --background: #FFF2F2;
+    --background-hover: #FFF2F2;
+    --color: black;
+    --color-hover: black;
+    --background-activated: #FFF2F2;
+}
+
+#footer{
+    z-index: 99;
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #EEEEEE;
+}
+
+ion-card-title{
+    font-size: 20px;
+    font-weight: bold;
 }

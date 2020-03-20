@@ -1,60 +1,54 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button><ion-icon name="menu-outline"></ion-icon></ion-button>
+      <ion-button><ion-icon name="menu-outline" color="dark"></ion-icon></ion-button>
     </ion-buttons>
-    <ion-title>Résultat Recherche</ion-title>
+    <ion-title>Résultat recherche</ion-title>
+      <ion-buttons slot="end">
+      <ion-button><ion-icon name="person" color="dark"></ion-icon></ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<ion-list>
-    <ion-item-sliding>
-    <ion-item>
-      <ion-card>
-        <img src="./assets/livre.jpg" />
+
+
+ <ion-card>
+        <img id="card_img" src="./assets/vieilles_charrues.png">
         <ion-card-header>
-          <ion-card-subtitle>Destination</ion-card-subtitle>
-          <ion-card-title>Madison, WI</ion-card-title>
+            <ion-grid>
+               <ion-row>
+                  <ion-col text-align="left" size="9">
+                      <ion-card-subtitle>19/07/19</ion-card-subtitle>
+          <ion-card-title>Vieilles charrues</ion-card-title>
+                  </ion-col>
+                  <ion-col center text-center size="3">
+                    <ion-checkbox mode="ios"></ion-checkbox>
+                  </ion-col>
+                </ion-row>
+            </ion-grid>
         </ion-card-header>
-        <ion-card-content>
-          Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
-            <ion-checkbox color="danger"></ion-checkbox>
-        </ion-card-content>
       </ion-card>
-    </ion-item>
-  </ion-item-sliding>
-    
-  <ion-item-sliding>
-    <ion-item>
-      <ion-card>
-        <img src="./assets/livre.jpg" />
+     <ion-card>
+        <img id="card_img" src="./assets/madonna.jpg">
         <ion-card-header>
-          <ion-card-subtitle>Destination</ion-card-subtitle>
-          <ion-card-title>Madison, WI</ion-card-title>
+            <ion-grid>
+               <ion-row>
+                  <ion-col text-align="left" size="9">
+                      <ion-card-subtitle>06/09/20</ion-card-subtitle>
+          <ion-card-title>Concert Madonna Paris</ion-card-title>
+                  </ion-col>
+                  <ion-col center text-center size="3">
+                   <ion-checkbox mode="ios"></ion-checkbox>
+                  </ion-col>
+                </ion-row>
+            </ion-grid>
+          
+        
         </ion-card-header>
-        <ion-card-content>
-          Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
-            <ion-checkbox color="danger"></ion-checkbox>
-        </ion-card-content>
       </ion-card>
-    </ion-item>
-  </ion-item-sliding>
-    
-    <ion-item-sliding>
-    <ion-item>
-      <ion-card>
-        <img src="./assets/livre.jpg" />
-        <ion-card-header>
-          <ion-card-subtitle>Destination</ion-card-subtitle>
-          <ion-card-title>Madison, WI</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
-            <ion-checkbox color="danger"></ion-checkbox>
-        </ion-card-content>
-      </ion-card>
-    </ion-item>
-  </ion-item-sliding>
-</ion-list>
+    <div id="footer">
+         <ion-button id="recherche"> Ajouter à mon souvenir </ion-button>
+    </div>
+   
 </ion-content>
