@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Rewind</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <h1>Revivez vos meilleurs souvenirs du mois</h1>
+    <ion-slides [options]="slideOpts">
+        <ion-slide *ngFor="let souvenir of listSouvenirs;">
+            <ion-card>
+                <ion-img class="ion-card-content" src={{souvenir.image}}></ion-img>
+                <div class="texte">
+                    <div class="ion-card-content">{{souvenir.lieu}}</div>
+                    <div class="ion-card-content">{{souvenir.date}}</div>
+                </div>
+
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+</ion-content>
