@@ -8,6 +8,24 @@ const routes: Routes = [
     path: 'resultat-recherche',
     loadChildren: () => import('./resultat-recherche/resultat-recherche.module').then( m => m.ResultatRecherchePageModule)
   },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'souvenirs',
+    loadChildren: () => import('./souvenirs/souvenirs.module').then( m => m.SouvenirsPageModule)
+  },
+  {
+    path: 'new-souvenir',
+    loadChildren: () => import('./new-souvenir/new-souvenir.module').then( m => m.NewSouvenirPageModule)
+  },
+
+
 ];
 
 @NgModule({
