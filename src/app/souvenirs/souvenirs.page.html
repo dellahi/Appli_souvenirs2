@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button><ion-icon class="dansHeader" name="menu-outline"></ion-icon></ion-button>
+      <ion-button [routerLink]="['/souvenirs']"><ion-icon class="dansHeader" name="menu-outline"></ion-icon></ion-button>
     </ion-buttons>
     <ion-title>Souvenirs</ion-title>
     <ion-buttons slot="end">
@@ -24,7 +24,7 @@
       </tr>
     </table>
   </ion-card>
-  <ion-card>
+  <ion-card [routerLink]="['/home']">
     <table>
       <tr>
         <td>
@@ -37,7 +37,7 @@
       </tr>
     </table>
   </ion-card>
-  <ion-card>
+  <ion-card [routerLink]="['/fil-souvenir']">
     <table>
       <tr>
         <td>
@@ -50,7 +50,7 @@
       </tr>
     </table>
   </ion-card>
-  <ion-card>
+  <ion-card [routerLink]="['/rewind']">
     <table>
       <tr>
         <td>

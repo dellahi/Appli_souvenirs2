@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button><ion-icon class="dansHeader" name="menu-outline"></ion-icon></ion-button>
+      <ion-button [routerLink]="['/souvenirs']"><ion-icon class="dansHeader" name="menu-outline"></ion-icon></ion-button>
     </ion-buttons>
     <ion-title>Nouveau souvenir</ion-title>
     <ion-buttons slot="end">
@@ -20,7 +20,7 @@
   <ion-label style="text-align: center;" position="floating">Date</ion-label>
   <ion-input></ion-input>
 </ion-item>
-<ion-card class="bouton">
+<ion-card [routerLink]="['/home']" class="bouton">
   <p>Recherche d'un évènement</p>
 </ion-card>
 <FORM>
