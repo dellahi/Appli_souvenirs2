@@ -32,6 +32,10 @@ const routes: Routes = [
     path: 'fil-souvenir',
     loadChildren: () => import('./fil-souvenir/fil-souvenir.module').then( m => m.FilSouvenirPageModule)
   },
+  {
+    path: 'mon-profil',
+    loadChildren: () => import('./mon-profil/mon-profil.module').then( m => m.MonProfilPageModule)
+  },
 
 ];
 
