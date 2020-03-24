@@ -36,6 +36,18 @@ const routes: Routes = [
     path: 'mon-profil',
     loadChildren: () => import('./mon-profil/mon-profil.module').then( m => m.MonProfilPageModule)
   },
+  {
+    path: 'recherche-profil',
+    loadChildren: () => import('./recherche-profil/recherche-profil.module').then( m => m.RechercheProfilPageModule)
+  },
+  {
+    path: 'partager-un-souvenir',
+    loadChildren: () => import('./partager-un-souvenir/partager-un-souvenir.module').then( m => m.PartagerUnSouvenirPageModule)
+  },
+  {
+    path: 'nouveau-souvenir',
+    loadChildren: () => import('./nouveau-souvenir/nouveau-souvenir.module').then( m => m.NouveauSouvenirPageModule)
+  },
 
 ];
 
