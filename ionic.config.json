@@ -1,5 +1,7 @@
 {
   "name": "appli_souvenirs2",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
