@@ -1,12 +1,15 @@
+ion-button{
+    --background: #FFF2F2;
+    --color:black;
+}
+
 ion-toolbar{
     --background: #FFF2F2;
 }
 
-.dansHeader{
-    height: 30px;
-    width: 30px;
-    margin-right : 20px;
-    color : black;
+ion-title {
+    text-align: center;
+    font-weight: bold;
 }
 
 ion-card{

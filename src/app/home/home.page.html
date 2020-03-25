@@ -1,52 +1,38 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button [routerLink]="['/souvenirs']"><ion-icon name="menu-outline" color="dark"></ion-icon></ion-button>
+      <ion-button [routerLink]="['/souvenirs']"><ion-icon class="dansHeader" name="menu-outline"></ion-icon></ion-button>
     </ion-buttons>
-    <ion-title>Recherche évènement</ion-title>
-      <ion-buttons slot="end">
-      <ion-button [routerLink]="['/mon-profil']"><ion-icon name="person" color="dark"></ion-icon></ion-button>
-    </ion-buttons>
+    <ion-title>Recherche</ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/mon-profil']"><ion-icon class="dansHeader" name="person-circle-outline"></ion-icon></ion-button>
+  </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div>
-      <ion-slides>
-        <ion-slide>
-          <div class="slide">
-            <img src="./assets/concert.jpeg"/>
-          </div>
-        </ion-slide>
-
-        <ion-slide>
-          <div class="slide">
-            <img src="./assets/livre.jpg"/>
-          </div>
-        </ion-slide>
-      </ion-slides>
-      <h1>Rechercher par</h1>
+      <div class="invisible">
+        <h3 style="text-align: center;">Rechercher par</h3>
       <ion-list>
          <ion-item>
-            <ion-label position="floating">Lieu</ion-label>
+            <ion-label  style="text-align: center;" position="floating">Lieu</ion-label>
             <ion-input></ion-input>
          </ion-item>
           <ion-item>
-            <ion-label position="floating">Date</ion-label>
+            <ion-label  style="text-align: center;" position="floating">Date</ion-label>
             <ion-input></ion-input>
          </ion-item>
           <ion-item>
-            <ion-label position="floating">Catégorie</ion-label>
+            <ion-label  style="text-align: center;" position="floating">Catégorie</ion-label>
             <ion-input></ion-input>
          </ion-item>
           <ion-item>
-            <ion-label position="floating">Nom/Prénom</ion-label>
+            <ion-label  style="text-align: center;" position="floating">Nom d'utilisateur</ion-label>
             <ion-input></ion-input>
-         </ion-item>
-         <ion-item>
-            <ion-button id="recherche_button" (click)="recherche()">Rechercher</ion-button> 
          </ion-item>
       </ion-list>
-       
+      <ion-card class="bouton" (click)="recherche()" expand="block">
+        <h4>Rechercher</h4>
+      </ion-card> 
   </div>
 </ion-content>

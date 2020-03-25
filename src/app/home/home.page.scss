@@ -1,54 +1,45 @@
-
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
-
-ion-content ion-toolbar {
-  --background: translucent;
+ion-button{
+  --background: #FFF2F2;
+  --color:black;
 }
 
 ion-toolbar{
-    --background: #F7E4E4;
+  --background: #FFF2F2;
 }
 
-#recherche_button{
-    --background: #F7E4E4;
-    --background-hover: #EDC0C0;
-    --color: black;
-    --color-hover: black;
-    --background-activated: #EDC0C0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    height: 40px;
-
+ion-title {
+  text-align: center;
+  font-weight: bold;
 }
 
-#card_img{
-    float:right;
+ion-card{
+
+  height: auto;
+  width : auto;
+  margin: auto;
+  text-align: center;
+  margin-top : 20px;
+  background-color: #FFF2F2;
 }
-h1{
-    text-align: center;
+
+.bouton{
+    
+  height: auto;
+  width : auto;
+  margin: auto;
+  text-align: center;
+  margin-top : 20px;
+  background-color: #FFF2F2;
+  color:black;
+}
+
+.invisible{
+
+  width: 200px;
+  align-content: center;
+  border:none;
+  margin-right: auto;
+  margin-left:auto;
+  margin-top: 20px;
+  
 }

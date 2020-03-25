@@ -1,15 +1,21 @@
 <ion-header>
-    <ion-toolbar>
-        <ion-title>Rewind</ion-title>
-    </ion-toolbar>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/souvenirs']"><ion-icon class="dansHeader" name="menu-outline"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>Rewind</ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/mon-profil']"><ion-icon class="dansHeader" name="person-circle-outline"></ion-icon></ion-button>
+  </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <h1>Revivez vos meilleurs souvenirs du mois</h1>
+    <h3>Revivez vos meilleurs souvenirs du mois</h3>
     <ion-slides [options]="slideOpts">
         <ion-slide *ngFor="let souvenir of listSouvenirs;">
             <ion-card>
-                <ion-img class="ion-card-content" src={{souvenir.image}}></ion-img>
+              <img id="card_img" src="{{souvenir.image}}">
                 <div class="texte">
                     <div class="ion-card-content">{{souvenir.lieu}}</div>
                     <div class="ion-card-content">{{souvenir.date}}</div>

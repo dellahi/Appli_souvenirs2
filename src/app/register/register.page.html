@@ -5,35 +5,37 @@
 </ion-header>
 
 <ion-content>
-  <ion-content>
+  <div class="invisible">
     <form  #form="ngForm" (ngSubmit)="register(form)" novalidate>
       <ion-grid>
         <ion-row color="primary" justify-content-center>
           <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
-            <div text-center>
-              <h3 >Créer votre compte !</h3>
-            </div>
-            <div padding>
+            <div>
               <ion-item>
-                <ion-input  name="lastName" type="text" placeholder="Nom" ngModel required></ion-input>
-              </ion-item>
-              <ion-item>
-                <ion-input name="firstName" type="text" placeholder="Prénom" ngModel required></ion-input>
-              </ion-item>
-              <ion-item>
-                <ion-input name="password" type="password" placeholder="Mot de passe" ngModel required></ion-input>
-              </ion-item>
-              <ion-item>
-                <ion-input name="confirm" type="password" placeholder="Confirmation mot de passe" ngModel required></ion-input>
-              </ion-item>
+                  <ion-label style="text-align: center;" position="floating">Nom</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label style="text-align: center;" position="floating">Prénom</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label style="text-align: center;" position="floating">Mot de passe</ion-label>
+                  <ion-input type="password"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label style="text-align: center;" position="floating">Confirmation</ion-label>
+                  <ion-input type="password"></ion-input>
+                </ion-item>
             </div>
             <br>
             <div padding>
-              <ion-button [routerLink]="['/login']" size="large" type="submit" [disabled]="form.invalid" expand="block">S'inscrire</ion-button>
+              <ion-card class="bouton" [routerLink]="['/souvenirs']" size="large" type="submit" [disabled]="form.invalid" expand="block"><h4>S'inscrire</h4></ion-card>
             </div>
+            <p>Déjà un compte ?<br><a [routerLink]="['/login']">Se connecter</a></p>  
           </ion-col>
         </ion-row>
       </ion-grid>
     </form>
-  </ion-content>
+  </div>
 </ion-content>

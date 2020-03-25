@@ -5,9 +5,47 @@ ion-button{
 
 ion-toolbar{
     --background: #FFF2F2;
-    --color:#000
+}
+
+ion-title {
+    text-align: center;
+    font-weight: bold;
 }
 
 h3{
     text-align: center;
+}
+
+.invisible{
+
+    width: 200px;
+    align-content: center;
+    border:none;
+    margin-right: auto;
+    margin-left:auto;
+    margin-top: 20px;
+    
+}
+
+a{
+    text-align: center;
+    font-size: 12px;
+    color: dimgrey;
+}
+
+p{
+    text-align: center;
+    font-size: 12px;
+    color: black;
+}
+
+.bouton{
+    
+    height: auto;
+    width : auto;
+    margin: auto;
+    text-align: center;
+    margin-top : 20px;
+    background-color: #FFF2F2;
+    color:black;
 }

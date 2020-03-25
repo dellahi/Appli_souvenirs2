@@ -12,32 +12,33 @@
 
 <ion-content>
   <div class="invisible">
- <ion-item>
-   <ion-label style="text-align: center;" position="floating">Nom du souvenir</ion-label>
-   <ion-input></ion-input>
- </ion-item>
- <ion-item>
-  <ion-label style="text-align: center;" position="floating">Date</ion-label>
-  <ion-input></ion-input>
-</ion-item>
-<ion-card [routerLink]="['/home']" class="bouton">
-  <p>Recherche d'un évènement</p>
-</ion-card>
-<FORM>
-  <SELECT name="nom" size="1">
-  <OPTION>Eragon
-  <OPTION>Harry Potter
-  <OPTION>Twilight
-  <OPTION>Hunger games
-  <OPTION>Contagion
-  </SELECT>
-  </FORM>
-  <textarea>
-    Description
-  </textarea>
-  <ion-card [routerLink]="['/nouveau-souvenir']" class="bouton">
-    <p>Suivant</p>
-  </ion-card>
-
-</div>
+     <ion-item>
+       <ion-label style="text-align: center;" position="floating">Nom du souvenir</ion-label>
+       <ion-input></ion-input>
+     </ion-item>
+    <ion-item>
+      <ion-label style="text-align: center;" position="floating">Date</ion-label>
+        <ion-input style="font-size: 12px;" type="Date"></ion-input>
+    </ion-item>
+    <ion-card class="bouton" (click)="addPhoto()" expand="block">
+      <table>
+        <tr>
+          <td>
+            <div><ion-icon style="height: 30px; width: 30px; margin-left: 5px; margin-right: 10px;" name="image"></ion-icon></div>
+          </td>
+          <td>
+            <p style="font-size: 18px;">Ajouter une image</p>
+          </td>
+        </tr>
+      </table>
+    </ion-card>
+    <FORM>
+        <textarea>
+ Description
+        </textarea>
+        <ion-card [routerLink]="['/souvenirs']" class="bouton">
+          <h4>Suivant</h4>
+        </ion-card>
+    </FORM>
+  </div>
 </ion-content>

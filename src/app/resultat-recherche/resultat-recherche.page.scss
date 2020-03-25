@@ -1,4 +1,16 @@
+ion-button{
+  --background: #FFF2F2;
+  --color:black;
+}
 
+ion-toolbar{
+  --background: #FFF2F2;
+}
+
+ion-title {
+  text-align: center;
+  font-weight: bold;
+}
 #container {
   text-align: center;
 
@@ -27,13 +39,7 @@
   text-decoration: none;
 }
 
-ion-content ion-toolbar {
-  --background: translucent;
-}
 
-ion-toolbar{
-    --background: #F7E4E4;
-}
 
 ion-checkbox{
     width: 40px;
@@ -84,4 +90,15 @@ transform: translateX(-50%);
 ion-card-title{
     font-size: 20px;
     font-weight: bold;
+}
+
+.bouton{
+    
+  height: auto;
+  width : 80%;
+  margin: auto;
+  text-align: center;
+  margin-top : 20px;
+  background-color: #FFF2F2;
+  color:black;
 }

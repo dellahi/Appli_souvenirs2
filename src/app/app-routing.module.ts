@@ -44,10 +44,7 @@ const routes: Routes = [
     path: 'partager-un-souvenir',
     loadChildren: () => import('./partager-un-souvenir/partager-un-souvenir.module').then( m => m.PartagerUnSouvenirPageModule)
   },
-  {
-    path: 'nouveau-souvenir',
-    loadChildren: () => import('./nouveau-souvenir/nouveau-souvenir.module').then( m => m.NouveauSouvenirPageModule)
-  },
+
 
 ];
 

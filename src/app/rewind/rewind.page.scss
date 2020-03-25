@@ -1,4 +1,9 @@
-ion-toolbar {
+ion-button{
+    --background: #FFF2F2;
+    --color:black;
+}
+
+ion-toolbar{
     --background: #FFF2F2;
 }
 
@@ -18,7 +23,7 @@ ion-card {
     margin-left: 5px;
 }
 
-h1 {
+h3 {
     margin: 15px;
     text-align: center;
     font-weight: bold;
