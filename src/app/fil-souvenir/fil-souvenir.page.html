@@ -14,6 +14,7 @@
     </ion-toolbar>
 </ion-header>
 <ion-content>
+
     <ion-list>
         <ion-card *ngFor="let souvenir of listSouvenirs;">
             <div class="card-title">{{souvenir.nom}}</div>
@@ -22,7 +23,17 @@
             <div class="ion-card-content">
                 <ion-img src={{souvenir.image}}></ion-img>
             </div>
+            <div>
+                <ion-fab vertical="top" horizontal="end"  slot="fixed">
+                    <ion-fab-button [routerLink]="['/partager-un-souvenir']">
+                        <ion-icon name="share"></ion-icon>
+                    </ion-fab-button>
+                </ion-fab>
+            </div>
 
         </ion-card>
+
     </ion-list>
+
 </ion-content>
+
