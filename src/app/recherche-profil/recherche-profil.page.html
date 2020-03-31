@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-button [routerLink]="['/souvenirs']"><ion-icon class="dansHeader" name="menu-outline"></ion-icon></ion-button>
     </ion-buttons>
-    <ion-title>Mon profil</ion-title>
+    <ion-title>Résultats</ion-title>
     <ion-buttons slot="end">
       <ion-button [routerLink]="['/mon-profil']"><ion-icon class="dansHeader" name="person-circle-outline"></ion-icon></ion-button>
   </ion-buttons>
@@ -16,9 +16,12 @@
     <div class ="img-box">
       <img src="../../assets/profile.jpg">
     </div>
-   <ion-card class="icone">
-    <ion-icon name="person-add-outline"></ion-icon>
-   </ion-card> 
+
+        <ion-fab vertical="top" horizontal="end"  slot="fixed">
+            <ion-fab-button>
+                <ion-icon name="person-add-outline" style="color:black;"></ion-icon>
+            </ion-fab-button>
+        </ion-fab>
     
     <div class="Desc">
     <p>RKETING</p>
@@ -34,6 +37,7 @@
         <div>
             <ion-img src={{souvenir.image}}></ion-img>
         </div>
+
 
     </ion-card>
 </ion-list>
