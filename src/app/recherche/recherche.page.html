@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/souvenirs']"><ion-icon class="dansHeader" name="menu-outline"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>Recherche amis</ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/mon-profil']"><ion-icon class="dansHeader" name="person-circle-outline"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="invisible">
+    <h3 style="text-align: center;">Rechercher par</h3>
+    <ion-list>
+
+      <ion-item>
+        <ion-label  style="text-align: center;" position="floating">Nom d'utilisateur</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+    </ion-list>
+    <ion-card class="bouton" (click)="recherche()" expand="block">
+      <h4>Rechercher</h4>
+    </ion-card>
+  </div>
+</ion-content>

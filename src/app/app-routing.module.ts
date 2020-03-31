@@ -44,6 +44,10 @@ const routes: Routes = [
     path: 'partager-un-souvenir',
     loadChildren: () => import('./partager-un-souvenir/partager-un-souvenir.module').then( m => m.PartagerUnSouvenirPageModule)
   },
+  {
+    path: 'recherche',
+    loadChildren: () => import('./recherche/recherche.module').then( m => m.RecherchePageModule)
+  },
 
 
 ];
