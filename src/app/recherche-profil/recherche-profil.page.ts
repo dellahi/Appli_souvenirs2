@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import{Souvenir} from '../../app/fil-souvenir/souvenirs';
 
 @Component({
   selector: 'app-recherche-profil',

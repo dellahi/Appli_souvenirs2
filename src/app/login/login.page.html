@@ -6,18 +6,18 @@
 
 <ion-content>
   <div class="invisible">
-  <form #form="ngForm" (ngSubmit)="login(form)">
+  <form #form="ngForm" (ngSubmit)="connexion()">
     <ion-grid>
       <ion-row color="primary">
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
           <div>
             <ion-item>
-              <ion-label style="text-align: center;" position="floating">Identifiant</ion-label>
-              <ion-input></ion-input>
+              <ion-label style="text-align: center;" position="floating" >Identifiant</ion-label>
+              <ion-input [(ngModel)]="username" name="username"></ion-input>
             </ion-item>
             <ion-item>
-              <ion-label style="text-align: center;" position="floating">Mot de passe</ion-label>
-              <ion-input></ion-input>
+              <ion-label style="text-align: center;" position="floating" >Mot de passe</ion-label>
+              <ion-input [(ngModel)]="password" name="password"></ion-input>
             </ion-item>
             <p><a [routerLink]="['/souvenirs']">Mot de passe oublié</a></p>
           </div>
@@ -28,7 +28,7 @@
             </div>
             </ion-row>
           <div>
-            <ion-card class="bouton" [routerLink]="['/souvenirs']" type="submit" [disabled]="form.invalid" expand="block"><h4>Se connecter</h4></ion-card>
+            <ion-button class="bouton" type="submit" [disabled]="form.invalid" expand="block"><h5>Se connecter</h5></ion-button>
           </div>
         <p>Pas encore de compte ?<br><a [routerLink]="['/register']">Créer un compte</a></p>  
         </ion-col>
