@@ -11,15 +11,15 @@ ion-title {
     text-align: center;
     font-weight: bold;
 }
-
 ion-card{
 
-    height: auto;
-    width : auto;
+  
+    height: 90px;
+    width : 250px;
     margin: auto;
-    text-align: center;
     margin-top : 20px;
     background-color: #FFF2F2;
+ 
 }
 
 .bouton{
@@ -28,7 +28,7 @@ ion-card{
     width : auto;
     margin: auto;
     text-align: center;
-    margin-top : 20px;
+    margin-top : 80px;
     background-color: #FFF2F2;
     color:black;
 }
@@ -62,4 +62,23 @@ textarea{
      width: 200px;
      margin-top: 20px;
      height: 100px;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15pt;
+    margin: 5px
+}
+.card-subtitle{
+    margin-left: 20px;
+}
+
+ion-img {
+    position: absolute;
+    width : 60%;
+    height: 60%;
+    left : 50%;
+    top: 35%;
+    border-radius: 100%;
 }

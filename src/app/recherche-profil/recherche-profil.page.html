@@ -3,80 +3,38 @@
     <ion-buttons slot="start">
       <ion-button [routerLink]="['/souvenirs']"><ion-icon class="dansHeader" name="menu-outline"></ion-icon></ion-button>
     </ion-buttons>
-    <ion-title>Recherche</ion-title>
+    <ion-title>Mon profil</ion-title>
     <ion-buttons slot="end">
       <ion-button [routerLink]="['/mon-profil']"><ion-icon class="dansHeader" name="person-circle-outline"></ion-icon></ion-button>
   </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
-    <ion-grid>
-      <ion-row>
-        <ion-col >
-          <div>
-            <br>Description
-            <br>
-            <br>Jhon
-            <br>dupont
-          </div>
-        </ion-col>
-        <ion-col>
-          <div><img  src="./assets/avatarIcon.jpg" /></div>
-        </ion-col>
-      </ion-row>
-      <ion-row class="ion-align-items-end">
-        <ion-col ></ion-col>
-        <ion-col ></ion-col>
-        <ion-col >
-        </ion-col>
-        <ion-col >
-          <div>
-            <ion-fab-button >
-              <img src="./assets/add-friend.png" /> 
-            </ion-fab-button>
-          </div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  <ion-card>
-    <ion-row>
-      <ion-col>
+    <div class="profile">
+    <div class ="img-box">
+      <img src="../../assets/profile.jpg">
+    </div>
+   <ion-card class="icone">
+    <ion-icon name="person-add-outline"></ion-icon>
+   </ion-card> 
+    
+    <div class="Desc">
+    <p>RKETING</p>
+    <p>Emma</p> 
+   </div> 
+  </div>     
+  
+  <ion-list>
+    <ion-card *ngFor="let souvenir of listSouvenir;">
+        <div class="card-title">{{souvenir.nom}}</div>
+        <div class="card-subtitle">{{souvenir.lieu}}</div>
+        <div class="card-subtitle">{{souvenir.date}}</div>
         <div>
-            <ion-card-content>les vielles charrues</ion-card-content>
+            <ion-img src={{souvenir.image}}></ion-img>
         </div>
-      </ion-col>
-      <ion-col>
-        <div><img src="./assets/ViellesCharrues.jpg" /></div>
-      </ion-col>
-    </ion-row>
-  </ion-card>
-  <ion-card>
-    <ion-row>
-      <ion-col>
-        <div>
-          <ion-card-content>le Film Eragon</ion-card-content>
-        </div>
-      </ion-col>
-      <ion-col>
-        <div>
-          <img src="./assets/eragon.jpg" />
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-card>
-  <ion-card>
-    <ion-row>
-      <ion-col>
-        <div>
-          <ion-card-content>Le Louvre</ion-card-content>
-        </div>
-      </ion-col>
-      <ion-col>
-        <div>
-          <img src="./assets/louvre.jpg" />
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-card>
+
+    </ion-card>
+</ion-list>
 </ion-content>
